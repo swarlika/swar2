@@ -5,12 +5,12 @@ on:
        - main
 jobs:
  build:
-    runs-on: ubuntu-latest
     strategy:
         fail-fast: false
         matrix:
         node-version:
           - 15.x
+        runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
     - run: npm install
