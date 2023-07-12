@@ -1,15 +1,14 @@
-name: deploy s3
+name: build s3
 on:
    push:
      branches:
        - main
 jobs:
- build:
-    strategy:
-        fail-fast: false
-        matrix:
-        node-version:
-          - 15.x
+    build:
+        strategy:
+           matrix:
+           node-version:
+              - 15.x
         runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
