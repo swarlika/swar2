@@ -10,7 +10,7 @@ jobs:
             matrix:
                 node-version: [15.x]
         steps:
-            - uses: action/checkout@v1
+            - uses: actions/checkout@v1
             - run: npm install
             - run: npm run build
             - run: npm test
