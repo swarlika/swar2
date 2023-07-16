@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
       
-          <html><h1>this project name is swarlika</h1></html>
+          <html><h1>Deploying React App to S3 Bucket using GitHub Actions</h1></html>
       
         <a
           className="App-link"
